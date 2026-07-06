@@ -20,7 +20,7 @@ if (Q.economic_growth) {
 
 Resources available: [+ resources +]
 
-tacc position: [? if tacc_toleration : toleration ?][? if tacc_in_government : in government - ?][? if tacc_toleration == 0 and tacc_in_government == 0 and tacc_caretaker == 0 : opposition ?][? if tacc_caretaker : caretaker government ?]
+TACC position: [? if tacc_toleration : toleration ?][? if tacc_in_government : in government - ?][? if tacc_toleration == 0 and tacc_in_government == 0 and tacc_caretaker == 0 : opposition ?][? if tacc_caretaker : caretaker government ?]
 [? if in_weimar_coalition and tacc_in_government: Weimar Coalition ?][? if in_grand_coalition and tacc_in_government: Grand Coalition ?][? if in_popular_front and tacc_in_government: Popular Front ?][? if in_left_front and tacc_in_government: Left Front ?][? if in_tacc_majority and tacc_in_government: tacc majority ?][? if in_minority_government and tacc_in_government: minority government ?][? if in_emergency_government and tacc_in_government: emergency government ?]
 
 [? if tacc_in_government and not in_tacc_majority and not in_left_front : Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
